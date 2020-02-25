@@ -33,6 +33,9 @@ The purpose of this post isn’t to introduce causal models and DAGs and
 confounders vs. colliders and all that. For that kind of introduction,
 consult any (or all\!) of these resources:
 
+  - Nick Huntington-Klein’s [ECON 305: Economics, Causality, and
+    Analytics course](http://www.nickchk.com/econ305.html) (especially
+    lectures 13–18)
   - Julia M. Rohrer, “Thinking Clearly About Correlations and Causation:
     Graphical Causal Models for Observational Data,” Advances in Methods
     and Practices in *Psychological Science* 1, no. 1 (March 2018):
