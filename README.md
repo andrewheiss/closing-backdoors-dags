@@ -938,7 +938,7 @@ GPA, and if we somehow multiply the three probability distributions
 (final grade given GPA, GRE, and mathcamp, GRE given GPA, and GPA),
 we’ll have a \(do(\cdot)\)-free version of the causal effect.
 
-Unfortunately I have absolutely no idea how to do this with R.
+**Unfortunately I have absolutely no idea how to do this with R.**
 
 ## Comparison of all methods
 
