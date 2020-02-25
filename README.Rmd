@@ -444,7 +444,7 @@ Finally, Judea Pearl's most important contribution to the world of causal infere
 
 Given observational data, though, we're left only with the ability to calculate $Pr(\text{Grade} | \text{Math camp})$, or the probability distribution of final grades given math camp. Because there's no $do(\cdot)$ here, we can't isolate the effect entirely if there are confounders like GRE and GPA. We tried that earlier in the "correlation isn't causation" section and found an incorrect program effect.
 
-The three rules of Pearl's *do*-calculus allows us to chop up causal diagrams in systematic ways that can remove the $do(\cdot)$. The reason closing backdoors by adjusting for confounders works is because the approach follows one of the *do*-calculus rules that removes $do(\cdot)$ from $Pr(\text{Grade} | do(\text{Math camp}))$. For instance (and apologies for using X, Y, and Z instead of actual variables!),in a DAG with one confounder (Z)…
+The three rules of Pearl's *do*-calculus allows us to chop up causal diagrams in systematic ways that can remove the $do(\cdot)$. The reason closing backdoors by adjusting for confounders works is because the approach follows one of the *do*-calculus rules that removes $do(\cdot)$ from $Pr(\text{Grade} | do(\text{Math camp}))$. For instance (and apologies for using X, Y, and Z instead of actual variables!), in a DAG with one confounder (Z)…
 
 ```{r do-calculus-tiny-dag, fig.width=5, fig.height=3, out.height="80%"}
 backdoor_dag <- dagify(Y ~ X + Z,
@@ -471,7 +471,7 @@ In other words, we can remove the $do(\cdot)$ if we multiply the probability dis
 mean(y[x == 1 & z == 1]) * mean(z == 1) + mean(y[x == 1 & z == 0]) * mean(z == 0)
 ```
 
-There are fancy algorithms that can determine the exact adjustmnet formula for a given DAG, and the **causaleffect** package lets you use these algorithms in R. Here's the *do*-calculus version of our math camp example. Unfortunately we have to rewrite the DAG with a different syntax for it to work:
+There are fancy algorithms that can determine the exact adjustment formula for a given DAG, and the **causaleffect** package lets you use these algorithms in R. Here's the *do*-calculus version of our math camp example. Unfortunately we have to rewrite the DAG with a different syntax for it to work:
 
 ```{r math-dag-do-calculus, warning=FALSE, message=FALSE}
 library(causaleffect)

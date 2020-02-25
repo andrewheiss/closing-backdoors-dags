@@ -867,7 +867,7 @@ reason closing backdoors by adjusting for confounders works is because
 the approach follows one of the *do*-calculus rules that removes
 \(do(\cdot)\) from \(Pr(\text{Grade} | do(\text{Math camp}))\). For
 instance (and apologies for using X, Y, and Z instead of actual
-variables\!),in a DAG with one confounder (Z)…
+variables\!), in a DAG with one confounder (Z)…
 
 ``` r
 backdoor_dag <- dagify(Y ~ X + Z,
@@ -900,7 +900,7 @@ version of the causal effect like this:
 mean(y[x == 1 & z == 1]) * mean(z == 1) + mean(y[x == 1 & z == 0]) * mean(z == 0)
 ```
 
-There are fancy algorithms that can determine the exact adjustmnet
+There are fancy algorithms that can determine the exact adjustment
 formula for a given DAG, and the **causaleffect** package lets you use
 these algorithms in R. Here’s the *do*-calculus version of our math camp
 example. Unfortunately we have to rewrite the DAG with a different
