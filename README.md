@@ -87,7 +87,7 @@ Here’s a tl;dr table of contents since this is a little long:
   - [Example program](#example-program)
   - [Simulated data](#simulated-data)
   - [Incorrect “correlation is not causation”
-    estimate](#incorrect-%22correlation-is-not-causation%22-estimate)
+    estimate](#incorrect-correlation-is-not-causation-estimate)
   - [Adjustment using forbidden unmeasured
     variable](#adjustment-using-forbidden-unmeasured-variable)
   - [Adjustment using educated-guess-based naive
