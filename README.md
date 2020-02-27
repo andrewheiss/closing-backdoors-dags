@@ -942,6 +942,8 @@ GPA, and if we somehow multiply the three probability distributions
 we’ll have a \(do(\cdot)\)-free version of the causal effect.
 
 **Unfortunately I have absolutely no idea how to do this with R.**
+Continuous variables blow up the math in *do*-calculus equations and I
+don’t know how to deal with that.
 
 ## Comparison of all methods
 
